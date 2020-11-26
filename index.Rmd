@@ -25,7 +25,7 @@ library(scales)
 library(kableExtra)
 
 loadacs5 <- load_variables(2018, "acs5", cache = TRUE)
-#api_key <- census_api_key("type_your_API_here")
+#api_key <- census_api_key("type_your_API_here") 
 # Request an API from here https://api.census.gov/data/key_signup.html
 ```
 
@@ -64,7 +64,7 @@ race_eth_summarize <- race_eth_lgst %>%
   rename(c("Race/Ethnicity" = variable, "Number of Tracts" = n))
 
 kable(race_eth_summarize) %>%
-  kable_styling(bootstrap_options = "striped", full_width = F, position = "left")
+  kable_styling(bootstrap_options = "striped", full_width = F, position = "left") 
 ```
 
 
